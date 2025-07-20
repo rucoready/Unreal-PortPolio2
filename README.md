@@ -56,9 +56,10 @@
   <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" alt="애니메이션 위젯2">
 </div>
 
-<details>
 MotionWarping <br/>	
 ![Image](https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda)<br/>	
+
+<details>
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
 
 ```cpp
