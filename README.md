@@ -155,19 +155,16 @@ DataTable을 사용한 데이터입력 및 수정<br/>
 SaveGame API를 사용한 데이터 저장 및 불러오기  
 ### 💾 SaveGame 기능 예시
 
-<div style="display: flex; gap: 12px; border: 2px solid #ccc; padding: 8px; max-width: 100%;">
-
-  <img src="https://github.com/user-attachments/assets/699a1698-f02b-4da4-ab73-35a33c311733" 
-       alt="SaveGame 성공 예시" 
-       style="flex: 1; border: 1px solid #888; max-width: 100%; height: auto; object-fit: contain;" />
-
-  <img src="https://github.com/user-attachments/assets/5b14f736-8847-4daf-a088-3d899960dbbb" 
-       alt="SaveGame" 
-       style="flex: 1; border: 1px solid #888; max-width: 100%; height: auto; object-fit: contain;" />
-
-</div>
-	
-</div>
+<table>
+  <tr>
+    <td align="center" style="border: 1px solid #888; padding: 4px;">
+      <img src="https://github.com/user-attachments/assets/699a1698-f02b-4da4-ab73-35a33c311733" alt="SaveGame 성공 예시" width="300" />
+    </td>
+    <td align="center" style="border: 1px solid #888; padding: 4px;">
+      <img src="https://github.com/user-attachments/assets/5b14f736-8847-4daf-a088-3d899960dbbb" alt="SaveGame" width="300" />
+    </td>
+  </tr>
+</table>
 <details>
 <summary><strong>📌 게임 세이브 코드</strong></summary>
 
