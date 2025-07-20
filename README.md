@@ -43,10 +43,18 @@
 
 > **Player 설계도**<br/>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지"> </p>
+<div align="center">
+  <h2 style="text-align: center; font-weight: bold;">Action Mapping을 사용한 액션바인드</h2>
+  <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지">
+</div>
 
-<p align="center"> <img src="https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf" alt="애니메이션 위젯1"> </p> <p align="center"> <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" alt="애니메이션 위젯2"> </p>
-
+<!-- 두 번째 섹션: 애니메이션 위젯 이미지들 -->
+<div align="center">
+  <h2 style="text-align: center; font-weight: bold;">플레이어와 연동된 애니메이션 위젯</h2>
+  <img src="https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf" alt="애니메이션 위젯1">
+  <br />
+  <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" alt="애니메이션 위젯2">
+</div>
 
 <details>
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
