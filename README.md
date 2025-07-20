@@ -125,6 +125,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 <br/>
 
 > **데이터 관리**<br/>
+
 DataTable을 사용한 데이터입력 및 수정<br/>
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
