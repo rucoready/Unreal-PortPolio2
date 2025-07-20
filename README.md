@@ -54,66 +54,7 @@ Action Mapping을 사용한 액션바인드
   <img src="https://github.com/user-attachments/assets/690b3b05-52b0-4454-a0bf-32cda76962f0" alt="Image"/>
 </p>
 
-<details>
-<summary><strong>📌 마우스 위치 기반 워프 타겟 설정 코드</strong></summary>
 
-```cpp
-APlayerController* playerController = Cast<APlayerController>(GetController());
-if (!playerController)
-{
-    return;
-}
-
-FVector worldLocation, worldDirection;
-if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirection))
-{
-    FVector start = worldLocation;
-    FVector end = start + (worldDirection * 10000.0f);
-
-    FHitResult hitResult;
-    FCollisionQueryParams params;
-    params.AddIgnoredActor(this);
-
-    if (GetWorld()->LineTraceSingleByChannel(hitResult, start, end, ECC_Visibility, params))
-    {
-        FVector targetLocation = hitResult.Location;
-        FVector direction = (targetLocation - GetActorLocation()).GetSafeNormal();
-        FRotator targetRotation = direction.Rotation();
-
-        // calculate targetLoc
-        FVector desiredLocation = GetActorLocation() + direction * 100.0f;
-
-        // sphereTrace
-        FHitResult moveHit;
-        float sphereRadius = 25.0f;
-
-        bool bHit = GetWorld()->SweepSingleByChannel(
-            moveHit,
-            GetActorLocation(),
-            desiredLocation,
-            FQuat::Identity,
-            ECC_Visibility,
-            FCollisionShape::MakeSphere(sphereRadius),
-            params
-        );
-
-        FVector finalLocation = bHit ? GetActorLocation() : desiredLocation;
-
-        // final transform
-        targetRotation.Pitch = 0.0f;
-        targetRotation.Roll = 0.0f;
-
-        FTransform targetTransform;
-        targetTransform.SetLocation(finalLocation);
-        targetTransform.SetRotation(targetRotation.Quaternion());
-
-        if (motionWarpComponent)
-        {
-            motionWarpComponent->AddOrUpdateWarpTargetFromTransform(TEXT("Target"), targetTransform);
-        }	
-    }
-}
-</details>
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
 | ![Phase1](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6)<br/><sub></sub> | ![Phase2](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4)<br/><sub></sub> |
