@@ -23,7 +23,7 @@
 
 # Packaging File
 > **DownLoad Link**<br/>
-● https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link](https://drive.google.com/file/d/1t-U6dMX0qIFhdOl7Sk5205If3i5YgXSM/view?usp=drive_link) <br/>
+● https://drive.google.com/file/d/1BxTrYxhr6COFHqMP94oGQUsoWQQSigWw/view?usp=sharing <br/>
 
 
 # 기술 설명
