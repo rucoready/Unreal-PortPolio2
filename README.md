@@ -157,6 +157,8 @@ SaveGame API를 사용한 데이터 저장 및 불러오기
 
 <div style="text-align: left; border: 2px solid #ccc; display: inline-block; padding: 8px;">
   <img src="https://github.com/user-attachments/assets/699a1698-f02b-4da4-ab73-35a33c311733" alt="SaveGame 성공 예시" style="display: block; max-width: 100%; height: auto; border: 1px solid #888;" />
+ <img src="https://github.com/user-attachments/assets/5b14f736-8847-4daf-a088-3d899960dbbb" alt="SaveGame" style="display: block; max-width: 100%; height: auto; border: 1px solid #888;" />
+	
 </div>
 <details>
 <summary><strong>📌 게임 세이브 코드</strong></summary>
