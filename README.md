@@ -127,16 +127,10 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 > **데이터 관리**<br/>
 
 DataTable을 사용한 데이터입력 및 수정<br/>
-<table>
-  <tr>
-    <th>플레이어 스킬 기본 계수</th>
-    <th>상점 아이템</th>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6" width="300"/><br/><sub></sub></td>
-    <td><img src="https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4" width="300"/><br/><sub></sub></td>
-  </tr>
-</table>
+<div style="width: 100%; max-width: 800px; margin: 0 auto;">
+  <img src="https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6" style="width: 100%; height: auto; display: block; margin-bottom: 20px;" />
+  <img src="https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4" style="width: 100%; height: auto; display: block;" />
+</div>
 > **Service_Calculate Distance Node**
 ```cpp
 #include "Boss/Service_CalculateDistanceBetween.h"
