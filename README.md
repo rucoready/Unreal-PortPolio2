@@ -16,11 +16,10 @@
 
 # 데모 영상 
 | 시연영상 
-| <a href="https://youtu.be/GQQTKInkYU4?si=LuZnMZ9ZGrvhFbc3"><img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0c4450f8-6378-4a69-a7a2-1d770803d3a5" /> </a> |
-|이미지 클릭시 유튜브로 이동합니다| <br/>
+| <a href="https://youtu.be/GQQTKInkYU4?si=LuZnMZ9ZGrvhFbc3"><img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0c4450f8-6378-4a69-a7a2-1d770803d3a5" /> </a> 
+| (이미지 클릭시 유튜브로 이동합니다) | <br/>
 
-● SinglePlayer 영상 -> CombatSystem 설명 <br/>
-● SinglePlayer 영상 -> 멀티플레이 및 크래프팅 설명<br/>
+
 
 # Packaging File
 > **DownLoad Link**<br/>
