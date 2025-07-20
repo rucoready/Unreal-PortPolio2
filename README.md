@@ -47,7 +47,7 @@ Action Mapping을 사용한 액션바인드
 ![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
 
 플레이어와 연동된 애니메이션위젯
-![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
+![Image](https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf)<br/>
 
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
