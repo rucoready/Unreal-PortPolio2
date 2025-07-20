@@ -46,7 +46,9 @@
 Action Mapping을 사용한 액션바인드
 ![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
 
+<p align="center">
 <strong>플레이어와 연동된 애니메이션위젯</strong><br/>
+</p>	
 ![Image](https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf)<br/>
 ![Image](https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1)<br/>
 <p align="center">
