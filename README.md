@@ -50,14 +50,16 @@
 
 <!-- 두 번째 섹션: 애니메이션 위젯 이미지들 -->
 <div align="center">
-  <h2 style="text-align: center; font-weight: bold;">플레이어와 연동된 애니메이션 위젯</h2>
+  <h3 style="text-align: center; font-weight: bold;">플레이어와 연동된 애니메이션 위젯</h3>
   <img src="https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf" alt="애니메이션 위젯1">
   <br />
   <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" alt="애니메이션 위젯2">
 </div>
 
-MotionWarping <br/>	
-![Image](https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda)<br/>	
+<div align="center">
+  <h3 style="text-align: center; font-weight: bold;">MotionWarping을 사용한 부드러운 방향전환</h3>
+  <img src="https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda" alt="모션워핑">	
+</div>
 
 <details>
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
