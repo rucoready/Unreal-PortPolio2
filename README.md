@@ -46,11 +46,9 @@
 Action Mapping을 사용한 액션바인드
 ![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
 
-<p align="center">
-  <strong>플레이어와 연동된 애니메이션 위젯</strong><br/>
-  <img src="https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf" alt="Image" width="600"/><br/>
-  <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" alt="Image" width="600"/>
-</p>
+플레이어와 연동된 애니메이션위젯<br/>
+![Image](https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf)<br/>
+![Image](https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1)<br/>
 <p align="center">
   <strong>스택형 위젯</strong><br/>
   <img src="https://github.com/user-attachments/assets/690b3b05-52b0-4454-a0bf-32cda76962f0" alt="Image"/>
