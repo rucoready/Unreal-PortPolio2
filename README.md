@@ -61,6 +61,22 @@
   <img src="https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda" alt="모션워핑">	
 </div>
 
+<table style="width: 100%;">
+  <tr>
+    <th style="width: 50%;">플레이어 메인 위젯</th>
+    <th style="width: 50%;">던전 위젯</th>
+  </tr>
+  <tr>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/30775e6b-355d-4e4c-b8d2-57022ec214bf" style="width: 100%; height: auto;" />
+    </td>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/d41d398e-7bb1-4336-bf00-35e4833c05a1" style="width: 100%; height: auto;" />
+    </td>
+  </tr>
+</table>
+
+
 <details>
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
 
