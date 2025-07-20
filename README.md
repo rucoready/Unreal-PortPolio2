@@ -131,9 +131,6 @@ DataTable을 사용한 데이터입력 및 수정<br/>
 |:--:|:--:|
 | ![Phase1](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6)<br/><sub></sub> | ![Phase2](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4)<br/><sub></sub> |
 
-| Pattern Nodes | All Nodes |
-|:--:|:--:|
-| ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
 > **Service_Calculate Distance Node**
 ```cpp
 #include "Boss/Service_CalculateDistanceBetween.h"
