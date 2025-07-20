@@ -134,10 +134,12 @@ DataTable을 사용한 데이터입력 및 수정<br/>
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/769fe519-1a5f-4089-a374-6ea3c3d63097" style="width: 100%; height: 300px; object-fit: contain;" />
+      <img src="https://user-images.githubusercontent.com/154757549/468372063-a0e01c82-895c-4d34-aa20-14fa828a3f5c.png" 
+           style="width: 100%; height: 400px; object-fit: contain; background-color: #000;" />
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/a0e01c82-895c-4d34-aa20-14fa828a3f5c" style="width: 100%; height: 300px; object-fit: contain;" />
+      <img src="https://user-images.githubusercontent.com/154757549/468372063-a0e01c82-895c-4d34-aa20-14fa828a3f5c.png" 
+           style="width: 100%; height: 400px; object-fit: contain; background-color: #000;" />
     </td>
   </tr>
 </table>
