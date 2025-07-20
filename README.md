@@ -55,7 +55,7 @@ Action Mapping을 사용한 액션바인드
 </p>
 
 <details>
-<summary><strong>📌 마우스 위치 기반 워프 타겟 설정 코드</strong></summary>
+<summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
 
 ```cpp
 APlayerController* playerController = Cast<APlayerController>(GetController());
@@ -115,6 +115,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 }
 ```
 </details>
+<br/>
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
 | ![Phase1](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6)<br/><sub></sub> | ![Phase2](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4)<br/><sub></sub> |
