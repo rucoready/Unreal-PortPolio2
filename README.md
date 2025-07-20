@@ -29,20 +29,21 @@
 # 기술 설명
 <br/>
 
-## Boss
-던전 마지막에 배치된 복잡한 AI<br/>
+## Player
+직접 조작 가능한 메인 캐릭터<br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;● BehaviorTree 동작방식 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● BossWidget 관리 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● BossBlackBoard 관리 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 네트워크 동기화 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● Service Node, Decorator Node를 사용한 여러가지 조건 체크<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● Blackboard과 BehaviorTree의 상호작용<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 각각 Task에서 독립적인 패턴 구현<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 탑다운 시점의 마우스이동, 키보드조작 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● StateMachine, BlendSpace를 활용한 자연스러운 움직임 전환 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 플레이어와 연동된 여러가지 기능의 위젯 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 쉽게 추가할수있는 콤보, 스킬 몽타쥬 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● PostProcess를 사용한 여러가지 효과<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Decal을 사용한 인디케이터<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● MotionWarping을 사용한 자연스러운 플레이어 움직임<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 넉백, 렉돌, 데미지Hud를 사용한 전투경험<br/>
 
-> **Boss 설계도**<br/>
+> **Player 설계도**<br/>
 
-![Image](https://github.com/user-attachments/assets/b17883c1-38a0-46f5-8e1f-eea31f9bd5ad)<br/>
+![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
 
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
