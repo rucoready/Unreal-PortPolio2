@@ -43,6 +43,7 @@
 
 > **Player 설계도**<br/>
 
+Action Mapping을 사용한 액션바인드
 ![Image](https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486)<br/>
 
 | Phase1 Nodes | Phase2 Nodes |
