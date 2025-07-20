@@ -158,9 +158,8 @@ SaveGame API를 사용한 데이터 저장 및 불러오기<br/>
 아래는 Unreal Engine에서 SaveGame 시스템이 정상적으로 작동하여, 게임 데이터가 유지되는 것을 보여주는 이미지입니다.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/699a1698-f02b-4da4-ab73-35a33c311733" alt="SaveGame 성공 예시" style="width: 100%; max-width: 800px;"/>
+  <img src="https://github.com/user-attachments/assets/699a1698-f02b-4da4-ab73-35a33c311733" alt="SaveGame 성공 예시" />
 </p>
-
 
 ## Enemy AI
 맵에 배치된 기본적인 적AI<br/>
