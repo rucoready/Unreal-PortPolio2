@@ -57,7 +57,7 @@
 </div>
 
 <details>
-# MotionWarping <br/>	
+MotionWarping <br/>	
 ![Image](https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda)<br/>	
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
 
