@@ -127,19 +127,17 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 > **데이터 관리**<br/>
 
 DataTable을 사용한 데이터입력 및 수정<br/>
-<table style="width: 100%; table-layout: fixed;">
+<table style="width: 100%;">
   <tr>
     <th style="width: 50%;">플레이어 스킬 기본 계수</th>
     <th style="width: 50%;">상점 아이템</th>
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://raw.githubusercontent.com/your-username/your-repo/main/assets/images/skill_table.png" 
-           style="width: 100%; height: 400px; object-fit: contain; display: block;" />
+      <img src="https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6" style="width: 100%; height: auto;" />
     </td>
     <td style="width: 50%;">
-      <img src="https://raw.githubusercontent.com/your-username/your-repo/main/assets/images/shop_item.png" 
-           style="width: 100%; height: 400px; object-fit: contain; display: block;" />
+      <img src="https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4" style="width: 100%; height: auto;" />
     </td>
   </tr>
 </table>
