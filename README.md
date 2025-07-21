@@ -151,10 +151,9 @@ DataTable을 사용한 데이터입력 및 수정<br/>
     </td>
   </tr>
 </table>
+<br/>
 
 SaveGame API를 사용한 데이터 저장 및 불러오기  
-### 💾 SaveGame 기능 예시
-
 <table>
   <tr>
     <td align="center" style="border: 1px solid #888; padding: 4px;">
