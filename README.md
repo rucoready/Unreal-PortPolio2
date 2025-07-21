@@ -216,11 +216,12 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 기본 BehaviorTree 신호 및 설계도
 
 <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" width="100%" />
+<br/>
 
 > **Behavior Tree**
 아래는 Behavior Tree의 구조와 실행 흐름을 보여주는 다이어그램입니다.
 
-| 기본 트리 구성 | 실행 흐름 다이어그램 |
+| 기본 트리 구성 | 추가 트리 구성 |
 |:--------------:|:-------------------:|
 | <img src="https://github.com/user-attachments/assets/5566b686-4456-4c66-922a-51697a04f943" alt="BehaviorTree Left" width="100%"/> | <img src="https://github.com/user-attachments/assets/d854d143-313e-4efa-ac8c-8327227b4cc5" alt="BehaviorTree Right" width="100%"/> |
 
