@@ -220,6 +220,8 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 
 > **Behavior Tree**
 아래는 Behavior Tree의 구조와 실행 흐름을 보여주는 다이어그램입니다.
+>
+> 
 &nbsp;&nbsp;&nbsp;&nbsp;● 구동방식 : Service노드에서의 EnumClass로 정해진 State 변형 <br>
 
 | 기본 트리 구성 | 추가 트리 구성 |
