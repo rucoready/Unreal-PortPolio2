@@ -218,14 +218,17 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" width="100%" />
 
 > **Behavior Tree**
-아래 이미지는 Behavior Tree의 전체 구조와 실행 흐름을 시각적으로 보여줍니다.
+아래 박스는 Behavior Tree의 전체적인 구조와 실행 흐름을 시각적으로 보여줍니다.
 
-<div style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; background-color: #f9f9f9;">
-  <p><strong>🟦 왼쪽:</strong> 기본적인 트리 구조 &nbsp;&nbsp;&nbsp; <strong>🟩 오른쪽:</strong> 실행 흐름 다이어그램</p>
-  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    <img src="https://github.com/user-attachments/assets/5566b686-4456-4c66-922a-51697a04f943" alt="Behavior Tree Left" style="width: 49%; border: 1px solid #aaa; border-radius: 6px;" />
-    <img src="https://github.com/user-attachments/assets/d854d143-313e-4efa-ac8c-8327227b4cc5" alt="Behavior Tree Right" style="width: 49%; border: 1px solid #aaa; border-radius: 6px;" />
-  </div>
+<div style="border: 2px solid #ddd; border-radius: 10px; padding: 20px; background-color: #fafafa; box-shadow: 0 0 5px rgba(0,0,0,0.05);">
+
+<p><strong>🟦 왼쪽:</strong> 기본 트리 구성 &nbsp;&nbsp;&nbsp; <strong>🟩 오른쪽:</strong> 실행 흐름 다이어그램</p>
+
+<div style="display: flex; justify-content: space-between; gap: 2%; flex-wrap: wrap;">
+  <img src="https://github.com/user-attachments/assets/5566b686-4456-4c66-922a-51697a04f943" alt="Behavior Tree 구조" style="width: 49%; border: 1px solid #ccc; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/d854d143-313e-4efa-ac8c-8327227b4cc5" alt="Behavior Tree 흐름" style="width: 49%; border: 1px solid #ccc; border-radius: 6px;" />
+</div>
+
 </div>
 
 > **Task_DogBartPatrol Node**
