@@ -205,18 +205,19 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 
 
 ## Enemy AI
-맵에 배치된 기본적인 적AI<br/>
+던전에서 스폰되는 AI<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;● BehaviorTree 동작방식 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● StateMachine 상반신 하반신 개별화 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 독자적 개인 시야각 적용 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 데미지 출력 HUD <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 아이템 확률드랍 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 네트워크 동기화 <br/>
-| Grux | Dog |
-|:--:|:--:|
-| <div align="center"> ![왼쪽 위](https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472) </div> | <div align="center"> ![오른쪽 위](https://github.com/user-attachments/assets/bbd4e4be-a4dd-4b1b-ad49-3ab117255f86) </div> |
-| <div align="center"> ![왼쪽 아래](https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a) </div> | <div align="center"> ![오른쪽 아래](https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6) </div> |
+&nbsp;&nbsp;&nbsp;&nbsp;● 8방향 BlendSpace의 자연스러운 움직임 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Interface를 사용한 플레이어와의 상호작용 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● AI-Perception <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● RVO, EQS 알고리즘 사용 <br/>
+
+Behavior Tree의 작동 흐름을 아래 GIF를 통해 확인할 수 있습니다:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" />
+</p>
 
 > **Task_DogBartMoveToPlayer Node**
 ```cpp
