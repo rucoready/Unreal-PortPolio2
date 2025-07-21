@@ -139,8 +139,8 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 DataTable을 사용한 데이터입력 및 수정<br/>
 <table style="width: 100%;">
   <tr>
-    <th style="width: 50%;">상점 아이템</th>
     <th style="width: 50%;">플레이어 스킬 계수 및 데미지</th>
+    <th style="width: 50%;">상점 아이템</th>
   </tr>
   <tr>
     <td style="width: 50%;">
