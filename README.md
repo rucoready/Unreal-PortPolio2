@@ -213,11 +213,9 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 &nbsp;&nbsp;&nbsp;&nbsp;● AI-Perception <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● RVO, EQS 알고리즘 사용 <br/>
 
-Behavior Tree의 작동 흐름을 아래 GIF를 통해 확인할 수 있습니다:
+아래 GIF는 Behavior Tree의 동작 흐름을 시각적으로 보여줍니다:
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" />
-</p>
+<img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" width="100%" />
 
 > **Task_DogBartMoveToPlayer Node**
 ```cpp
