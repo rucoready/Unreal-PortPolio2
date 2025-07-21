@@ -44,7 +44,7 @@
 > **Player 설계도**<br/>
 
 <div align="center">
-  <h2 style="text-align: center; font-weight: bold;">Action Mapping을 사용한 액션바인드</h2>
+  <h3 style="text-align: center; font-weight: bold;">Action Mapping을 사용한 액션바인드</h3>
   <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지">
 </div>
 
