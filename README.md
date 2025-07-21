@@ -213,48 +213,18 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 &nbsp;&nbsp;&nbsp;&nbsp;● AI-Perception <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● RVO, EQS 알고리즘 사용 <br/>
 
-아래 GIF는 Behavior Tree의 동작 흐름을 시각적으로 보여줍니다:
+기본 BehaviorTree 신호 및 설계도
 
 <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" width="100%" />
 
-> **Task_DogBartMoveToPlayer Node**
-```cpp
-#include "Task_DogBartMoveToPlayer.h"
-#include "BehaviorTree/BlackboardComponent.h"
-#include "BehaviorTree/BTTaskNode.h"
-#include "DogBartAIController.h"
-#include "DogBart.h"
-#include "NavigationSystem.h"
+> **Behavior Tree**
+아래 이미지는 Behavior Tree의 전체적인 구조를 시각적으로 보여줍니다.  
+왼쪽은 기본적인 트리 구조, 오른쪽은 실행 흐름을 설명하는 다이어그램입니다.
 
-
-UTask_DogBartMoveToPlayer::UTask_DogBartMoveToPlayer(FObjectInitializer const& ObjectInitializer)
-{
-	NodeName = TEXT("Move To nearest Player");
-}
-
-EBTNodeResult::Type UTask_DogBartMoveToPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-{
-
-    UBlackboardComponent* BlackboardComp = OwnerComp.GetBlackboardComponent();
-
-    if (BlackboardComp)
-    {
-        // 블랙보드에서 벡터 값을 가져옵니다.
-        FVector NearestPlayerLocation = BlackboardComp->GetValueAsVector(TEXT("DetectedPlayerLoc"));
-
-        if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
-        {
-            ADogBartAIController* dogBartController = Cast<ADogBartAIController>(OwnerComp.GetAIOwner());
-            if (dogBartController)
-            {
-                
-                dogBartController->MoveToLocation(NearestPlayerLocation);
-            }
-        }      
-    }
-    return EBTNodeResult::Failed;
-}
-```
+<div style="display: flex; gap: 16px; border: 1px solid #ccc; padding: 16px; border-radius: 8px;">
+  <img src="https://github.com/user-attachments/assets/5566b686-4456-4c66-922a-51697a04f943" alt="Behavior Tree 기본 구조" width="49%">
+  <img src="https://github.com/user-attachments/assets/d854d143-313e-4efa-ac8c-8327227b4cc5" alt="Behavior Tree 실행 흐름" width="49%">
+</div>
 
 > **Task_DogBartPatrol Node**
 ```cpp
