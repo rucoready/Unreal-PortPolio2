@@ -231,8 +231,8 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 ## 🎯 EQS 시스템 (Environment Query System)
 
 > **EQS 모델 설명**  
-> 아래 이미지는 AI가 상황에 맞게 환경을 분석하고 판단하는 **EQS 시스템**의 구성도를 나타냅니다.  
-> 환경 쿼리, 점수화, 필터링 과정을 통해 적절한 위치나 대상을 자동으로 선택하게 됩니다.
+> Strafe 이동을 위한 EQS 시스템
+> 환경 쿼리, 점수화, 필터링 과정을 통해 적절한 위치를 선택합니다
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/10873efa-9d43-4cd3-96b8-c866aa892b92" alt="EQS 시스템 구성도" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; padding: 4px;" />
