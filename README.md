@@ -231,7 +231,7 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 ## 🎯 EQS 시스템 (Environment Query System)
 
 > **EQS 모델 설명**  
-> Strafe 이동을 위한 EQS 시스템
+> Strafe 이동을 위한 EQS 시스템<br>
 > 환경 쿼리, 점수화, 필터링 과정을 통해 적절한 위치를 선택합니다
 
 <div align="center">
