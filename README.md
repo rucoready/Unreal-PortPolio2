@@ -262,6 +262,7 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 > **C++ 코드에서 Material Parameter Collection(MPC)**의 Scalar 값을 직접 조절하여 Dissolve 효과를 제어하며,<br>
 > 이를 통해 연출 타이밍을 정밀하게 컨트롤할 수 있고, 여러 오브젝트에 일괄 적용하는 것도 가능합니다.
 
+> 👉 [Dissolve Material 제작 과정 보러가기](https://lucodev.tistory.com/48)
 
 > **Task_DogBartPatrol Node**
 ```cpp
