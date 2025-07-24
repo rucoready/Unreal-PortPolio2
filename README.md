@@ -358,7 +358,10 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 </table>
 <br/>
 
+> **State Machine을 기반으로 한 움직임변경**  
+> AnimInstance를 활용한 State Machine 기반의 BlendSpace 제어<br>
 
+![Image](https://github.com/user-attachments/assets/0f26084b-d34f-414f-8d14-b7d3d50a6b36) </div>
 
 --------
 ## 오브젝트
