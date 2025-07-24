@@ -263,8 +263,9 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 > 이를 통해 연출 타이밍을 정밀하게 컨트롤할 수 있고, 여러 오브젝트에 일괄 적용하는 것도 가능합니다.
 
 > 🔗 [내 티스토리 블로그에서 제작 과정 보기](https://lucodev.tistory.com/48)
->
-> 
+
+![스폰사진](https://github.com/user-attachments/assets/6ca11969-25d8-46c8-974b-2d4480e5f318)
+
 > **Task_DogBartPatrol Node**
 ```cpp
 #include "Task_DogBartPatrol.h"
