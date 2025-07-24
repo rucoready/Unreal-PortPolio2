@@ -266,6 +266,69 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 
 ![스폰사진](https://github.com/user-attachments/assets/6ca11969-25d8-46c8-974b-2d4480e5f318)
 
+<details>
+<summary><strong>📌 DissolveMaterial 제어 Task 코드 </strong></summary>
+
+```cpp
+APlayerController* playerController = Cast<APlayerController>(GetController());
+if (!playerController)
+{
+    return;
+}
+
+FVector worldLocation, worldDirection;
+if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirection))
+{
+    FVector start = worldLocation;
+    FVector end = start + (worldDirection * 10000.0f);
+
+    FHitResult hitResult;
+    FCollisionQueryParams params;
+    params.AddIgnoredActor(this);
+
+    if (GetWorld()->LineTraceSingleByChannel(hitResult, start, end, ECC_Visibility, params))
+    {
+        FVector targetLocation = hitResult.Location;
+        FVector direction = (targetLocation - GetActorLocation()).GetSafeNormal();
+        FRotator targetRotation = direction.Rotation();
+
+        // calculate targetLoc
+        FVector desiredLocation = GetActorLocation() + direction * 100.0f;
+
+        // sphereTrace
+        FHitResult moveHit;
+        float sphereRadius = 25.0f;
+
+        bool bHit = GetWorld()->SweepSingleByChannel(
+            moveHit,
+            GetActorLocation(),
+            desiredLocation,
+            FQuat::Identity,
+            ECC_Visibility,
+            FCollisionShape::MakeSphere(sphereRadius),
+            params
+        );
+
+        FVector finalLocation = bHit ? GetActorLocation() : desiredLocation;
+
+        // final transform
+        targetRotation.Pitch = 0.0f;
+        targetRotation.Roll = 0.0f;
+
+        FTransform targetTransform;
+        targetTransform.SetLocation(finalLocation);
+        targetTransform.SetRotation(targetRotation.Quaternion());
+
+        if (motionWarpComponent)
+        {
+            motionWarpComponent->AddOrUpdateWarpTargetFromTransform(TEXT("Target"), targetTransform);
+        }	
+    }
+}
+```
+
+</details>
+
 > **Task_DogBartPatrol Node**
 ```cpp
 #include "Task_DogBartPatrol.h"
