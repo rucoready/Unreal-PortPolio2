@@ -316,14 +316,16 @@ void UTask_SkeletonSpawn::TickTask(UBehaviorTreeComponent& ownerComp, uint8* nod
 
 </details>
 
-## EnumClass를 사용한 BlackBoardKey제어
+## EnumClass를 사용한 BlackBoardKey제어  
 (설명)<br/>
 
-![enumclass사진1](https://github.com/user-attachments/assets/6220ac42-0326-4446-b9dd-34eaf99d6733)
+<img src="https://github.com/user-attachments/assets/6220ac42-0326-4446-b9dd-34eaf99d6733" alt="enumclass사진1" width="600" />
 
-![enumclass사진2](https://github.com/user-attachments/assets/f3b4a923-b598-4b63-8e1e-925217316862)
+<img src="https://github.com/user-attachments/assets/f3b4a923-b598-4b63-8e1e-925217316862" alt="enumclass사진2" width="600" />
+
 > 🔗 [내 티스토리 블로그에서 제작 과정 보기](https://lucodev.tistory.com/42)
-> 
+
+
 ## Dragon Polymorph
 드래곤으로 변신 가능한 캐릭터<br/>
 
