@@ -317,7 +317,7 @@ void UTask_SkeletonSpawn::TickTask(UBehaviorTreeComponent& ownerComp, uint8* nod
 </details>
 
 ## EnumClass를 사용한 BlackBoardKey제어  
-BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니다.
+BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니다. <br/>
 서비스 노드에서 설정된 Enum 값을 읽어와, 해당 상태에 따라 Task를 분기 실행합니다.<br/>
 
 <img src="https://github.com/user-attachments/assets/6220ac42-0326-4446-b9dd-34eaf99d6733" alt="enumclass사진1" width="600" />
