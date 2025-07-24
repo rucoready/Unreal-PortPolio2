@@ -350,7 +350,7 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/09a7679f-f982-4fde-b7ba-ba5c42ab8fbf" style="width: 100%; height: auto;" />
+      <img src="https://github.com/user-attachments/assets/1964d324-54aa-497e-b606-5c1540b0d741" style="width: 100%; height: auto;" />
     </td>
     <td style="width: 50%;">
       <img src="https://github.com/user-attachments/assets/9cf4d39c-9301-4a1d-a108-d19326a96e5c" style="width: 100%; height: auto;" />
