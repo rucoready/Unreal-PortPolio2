@@ -387,7 +387,7 @@ Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 �
 
 <img src="https://github.com/user-attachments/assets/5a1f46fa-e4f3-4074-aa0a-6429357e685c" alt="Neck 회전 적용 1" width="600"/>
 <br/>
-<img src="https://github.com/user-attachments/assets/fbbf5671-0cef-4f11-8980-09da90d7d071" alt="Neck 회전 적용 2" width="600"/>
+<img src="https://github.com/user-attachments/assets/f14c24f1-7358-4ed6-9d42-b1f77f2d59a0" alt="Neck 회전 적용 2" width="600"/>
 
 
 ---
