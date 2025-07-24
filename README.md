@@ -394,6 +394,8 @@ Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 �
 
 ## 📌 결과 
 AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여, **다양한 방향성과 속도에 따라 자연스럽게 전환되는 애니메이션 시스템**을 구성하였으며, **특정 본(Neck)**은 개별 제어를 통해 더욱 디테일한 움직임을 구현합니다.
+<img src="https://github.com/user-attachments/assets/f1f32033-d59f-4357-83f2-b84f8da62d53" alt="BlendSpace 연동" width="600"/>
+
 
 
 --------
