@@ -270,60 +270,47 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 <summary><strong>📌 DissolveMaterial 제어 Task 코드 </strong></summary>
 
 ```cpp
-APlayerController* playerController = Cast<APlayerController>(GetController());
-if (!playerController)
+void UTask_SkeletonSpawn::TickTask(UBehaviorTreeComponent& ownerComp, uint8* nodeMemory, float deltaSeconds)
 {
-    return;
-}
+	Super::TickTask(ownerComp, nodeMemory, deltaSeconds);
+	FTaskSkeletonSpawnMemory* taskMemory = reinterpret_cast<FTaskSkeletonSpawnMemory*>(nodeMemory);
 
-FVector worldLocation, worldDirection;
-if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirection))
-{
-    FVector start = worldLocation;
-    FVector end = start + (worldDirection * 10000.0f);
+	taskMemory->structCurrentTime += deltaSeconds;
+	UBlackboardComponent* blackBoard = ownerComp.GetBlackboardComponent();
+	if (taskMemory->structCurrentTime < 3.0f)
+	{
+		
+		float dissolveValue = FMath::Lerp(maxDissolveValue, minDissolveValue, taskMemory->structCurrentTime / 3.0f);
+		ABasicSkeletonEnemy* skeleton = Cast<ABasicSkeletonEnemy>(ownerComp.GetAIOwner()->GetPawn());
+		for (int32 i = 0; i < 3; ++i)
+		{
+			int32 materialIndex = i;
 
-    FHitResult hitResult;
-    FCollisionQueryParams params;
-    params.AddIgnoredActor(this);
-
-    if (GetWorld()->LineTraceSingleByChannel(hitResult, start, end, ECC_Visibility, params))
-    {
-        FVector targetLocation = hitResult.Location;
-        FVector direction = (targetLocation - GetActorLocation()).GetSafeNormal();
-        FRotator targetRotation = direction.Rotation();
-
-        // calculate targetLoc
-        FVector desiredLocation = GetActorLocation() + direction * 100.0f;
-
-        // sphereTrace
-        FHitResult moveHit;
-        float sphereRadius = 25.0f;
-
-        bool bHit = GetWorld()->SweepSingleByChannel(
-            moveHit,
-            GetActorLocation(),
-            desiredLocation,
-            FQuat::Identity,
-            ECC_Visibility,
-            FCollisionShape::MakeSphere(sphereRadius),
-            params
-        );
-
-        FVector finalLocation = bHit ? GetActorLocation() : desiredLocation;
-
-        // final transform
-        targetRotation.Pitch = 0.0f;
-        targetRotation.Roll = 0.0f;
-
-        FTransform targetTransform;
-        targetTransform.SetLocation(finalLocation);
-        targetTransform.SetRotation(targetRotation.Quaternion());
-
-        if (motionWarpComponent)
-        {
-            motionWarpComponent->AddOrUpdateWarpTargetFromTransform(TEXT("Target"), targetTransform);
-        }	
-    }
+			UMaterialInstanceDynamic* dynMat = skeleton->GetMesh()->CreateAndSetMaterialInstanceDynamic(materialIndex);
+			if (dynMat)
+			{
+				dynMat->SetScalarParameterValue("Dissolve", dissolveValue);
+			}
+		}
+		if (skeleton->sword)
+		{
+			int32 swordMatCount = skeleton->sword->GetNumMaterials();
+			for (int32 i = 0; i < swordMatCount; ++i)
+			{
+				UMaterialInstanceDynamic* swordMat = skeleton->sword->CreateAndSetMaterialInstanceDynamic(i);
+				if (swordMat)
+				{
+					swordMat->SetScalarParameterValue("Dissolve", dissolveValue);
+				}
+			}
+		}
+	}
+	else
+	{
+		ABasicSkeletonEnemy* skeleton = Cast<ABasicSkeletonEnemy>(ownerComp.GetAIOwner()->GetPawn());
+		blackBoard->SetValueAsBool("Spawn", true);
+		FinishLatentTask(ownerComp, EBTNodeResult::Succeeded);
+	}
 }
 ```
 
