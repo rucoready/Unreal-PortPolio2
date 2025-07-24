@@ -247,6 +247,10 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 
 ![8BlendSpace움짤](https://github.com/user-attachments/assets/7aa9b22c-615c-4586-9243-7dd4a0a03b3f)
 
+![8BlendSpace설계도사진](https://github.com/user-attachments/assets/84b2df3a-e4f4-4df1-bbd2-5308c6a92f8f)
+
+
+
 > **Task_DogBartPatrol Node**
 ```cpp
 #include "Task_DogBartPatrol.h"
