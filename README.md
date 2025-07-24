@@ -341,8 +341,11 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 
 ![Image](https://github.com/user-attachments/assets/f72e38e3-325b-446c-b90a-e855c28e8f2c) </div>
 
+> **TakeOff / Landing**  
+![Image](https://github.com/user-attachments/assets/4cba1d3f-b084-4ae0-a8b4-c1e74ad09005) </div>
 
 
+--------
 ## 오브젝트
 플레이어를 도와주거나 방해하거나 디테일이 추가된 요소<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 경험치 구슬<br/>
