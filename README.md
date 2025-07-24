@@ -313,6 +313,13 @@ void UTask_SkeletonSpawn::TickTask(UBehaviorTreeComponent& ownerComp, uint8* nod
 	}
 }
 ```
+## EnumClass를 사용한 BlackBoardKey제어
+(설명)<br/>
+
+![enumclass사진1](https://github.com/user-attachments/assets/6220ac42-0326-4446-b9dd-34eaf99d6733)
+
+![enumclass사진2](https://github.com/user-attachments/assets/f3b4a923-b598-4b63-8e1e-925217316862)
+> 🔗 [내 티스토리 블로그에서 제작 과정 보기](https://lucodev.tistory.com/42)
 
 </details>
 
