@@ -342,7 +342,7 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 ![Image](https://github.com/user-attachments/assets/f72e38e3-325b-446c-b90a-e855c28e8f2c) </div>
 
 > **TakeOff / Landing**  
-![Image](https://github.com/user-attachments/assets/4cba1d3f-b084-4ae0-a8b4-c1e74ad09005) </div>
+![TakeOff](https://github.com/user-attachments/assets/4cba1d3f-b084-4ae0-a8b4-c1e74ad09005)
 
 
 --------
