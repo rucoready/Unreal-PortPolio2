@@ -364,10 +364,33 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 
 ![Image](https://github.com/user-attachments/assets/0f26084b-d34f-414f-8d14-b7d3d50a6b36) </div>
 
->Controll Rig 제어 애님시퀀스 제작<br>
-![Image](https://github.com/user-attachments/assets/f8f6207e-b166-4b44-910c-e448c1869379) </div>
->이후 Baked된 애님시퀀스를 BlendSpace와 연동
-![Image](https://github.com/user-attachments/assets/e0d24d5d-496c-4588-8549-400f6e115302) </div>
+## 🎞️ State Machine 기반 BlendSpace 제작 과정
+
+---
+
+### 1. 🎛 Control Rig 기반 애니메이션 제작  
+Control Rig를 사용해 직접 포즈 및 움직임을 제어하며 애니메이션 시퀀스를 제작합니다.
+
+<img src="https://github.com/user-attachments/assets/f8f6207e-b166-4b44-910c-e448c1869379" alt="ControlRig 제작" width="600"/>
+
+---
+
+### 2. 🔥 애니메이션 시퀀스 베이킹 후 BlendSpace에 연동  
+Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 변환한 뒤, 이를 BlendSpace에 연결하여 다양한 방향 전환/속도에 따른 자연스러운 전환을 구성합니다.
+
+<img src="https://github.com/user-attachments/assets/e0d24d5d-496c-4588-8549-400f6e115302" alt="BlendSpace 연동" width="600"/>
+
+---
+
+### 3. 🦴 SkeletalMesh의 Neck 본 별도 제어  
+상체의 시선 방향이나 고개 움직임을 세밀하게 제어하기 위해, Neck 본의 회전은 별도로 AnimInstance에서 제어합니다.
+
+<img src="https://github.com/user-attachments/assets/5a1f46fa-e4f3-4074-aa0a-6429357e685c" alt="Neck 회전 적용" width="600"/>
+
+---
+
+## 📌 요약  
+AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여, **다양한 방향성과 속도에 따라 자연스럽게 전환되는 애니메이션 시스템**을 구성하였으며, **특정 본(Neck)**은 개별 제어를 통해 더욱 디테일한 움직임을 구현합니다.
 
 --------
 ## 오브젝트
