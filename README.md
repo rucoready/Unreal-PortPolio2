@@ -256,6 +256,11 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 
 </details>
 
+> **스폰과 디스폰을 위한 DissolveMaterial**  
+> 스칼라 파라미터의 제어로 스폰과 디스폰의 연출<br>
+> 머티리얼에 설정된 DissolveMask와 노이즈 텍스처를 활용해, 캐릭터가 점차 나타나거나 사라지는 시각 효과를 구현합니다.<br>
+> **C++ 코드에서 Material Parameter Collection(MPC)**의 Scalar 값을 직접 조절하여 Dissolve 효과를 제어하며,<br>
+> 이를 통해 연출 타이밍을 정밀하게 컨트롤할 수 있고, 여러 오브젝트에 일괄 적용하는 것도 가능합니다.
 
 
 > **Task_DogBartPatrol Node**
