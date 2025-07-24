@@ -386,11 +386,15 @@ Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 �
 상체의 시선 방향이나 고개 움직임을 세밀하게 제어하기 위해, Neck 본의 회전은 별도로 AnimInstance에서 제어합니다.
 
 <img src="https://github.com/user-attachments/assets/5a1f46fa-e4f3-4074-aa0a-6429357e685c" alt="Neck 회전 적용" width="600"/>
+<br/>
+![Image](https://github.com/user-attachments/assets/fbbf5671-0cef-4f11-8980-09da90d7d071)
+
 
 ---
 
-## 📌 요약  
+## 📌 결과 
 AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여, **다양한 방향성과 속도에 따라 자연스럽게 전환되는 애니메이션 시스템**을 구성하였으며, **특정 본(Neck)**은 개별 제어를 통해 더욱 디테일한 움직임을 구현합니다.
+
 
 --------
 ## 오브젝트
