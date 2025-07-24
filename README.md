@@ -342,7 +342,22 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 ![Image](https://github.com/user-attachments/assets/f72e38e3-325b-446c-b90a-e855c28e8f2c) </div>
 
 > **TakeOff / Landing**  
-![TakeOff](https://github.com/user-attachments/assets/4cba1d3f-b084-4ae0-a8b4-c1e74ad09005)
+<table style="width: 100%;">
+  <tr>
+    <th style="width: 50%;">Take Off</th>
+    <th style="width: 50%;">Landing</th>
+  </tr>
+  <tr>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/09a7679f-f982-4fde-b7ba-ba5c42ab8fbf" style="width: 100%; height: auto;" />
+    </td>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/9cf4d39c-9301-4a1d-a108-d19326a96e5c" style="width: 100%; height: auto;" />
+    </td>
+  </tr>
+</table>
+<br/>
+
 
 
 --------
