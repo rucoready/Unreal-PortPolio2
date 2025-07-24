@@ -400,9 +400,11 @@ AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여,
 
 <br/>
 
-<img src="https://github.com/user-attachments/assets/f1f32033-d59f-4357-83f2-b84f8da62d53" alt="BlendSpace 결과 이미지" width="600"/>
-
-<p align="center"><em>▲ 최종 BlendSpace 연동 결과</em></p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f1f32033-d59f-4357-83f2-b84f8da62d53" alt="BlendSpace 결과 이미지" width="600"/>
+  <br/>
+  <em>▲ 최종 BlendSpace 연동 결과</em>
+</p>
 
 
 
