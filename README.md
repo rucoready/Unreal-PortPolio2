@@ -335,6 +335,7 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 &nbsp;&nbsp;&nbsp;&nbsp;● Layered Blend Per Bone 노드를 활용해 목 위와 목 아래를 개별적으로 제어 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Projectile 타입 투사체 발사가 가능 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 변신 시 고유 시네마틱 컷씬이 재생됨 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Poccess방식 컨트롤러 제어 <br/>
 
 > **고유 시네 컷씬**  
 > 플레이어의 게이지가 Max일 경우 변신 가능<br>
@@ -362,6 +363,11 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 > AnimInstance를 활용한 State Machine 기반의 BlendSpace 제어<br>
 
 ![Image](https://github.com/user-attachments/assets/0f26084b-d34f-414f-8d14-b7d3d50a6b36) </div>
+
+>Controll Rig 제어 애님시퀀스 제작<br>
+![Image](https://github.com/user-attachments/assets/f8f6207e-b166-4b44-910c-e448c1869379) </div>
+>이후 Baked된 애님시퀀스를 BlendSpace와 연동
+![Image](https://github.com/user-attachments/assets/e0d24d5d-496c-4588-8549-400f6e115302) </div>
 
 --------
 ## 오브젝트
