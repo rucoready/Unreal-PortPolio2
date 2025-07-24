@@ -472,7 +472,7 @@ else if (newDragon && bIsDragonSpawned)
 ```
 
 </details>
----
+
 
 ## 📌 결과
 
