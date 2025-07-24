@@ -238,9 +238,14 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
   
 ![EQS 시스템 구성도](https://github.com/user-attachments/assets/10873efa-9d43-4cd3-96b8-c866aa892b92)
 
-![움짤 이미지](https://github.com/user-attachments/assets/1977e5a8-a9a9-4b4b-84fc-18b9d6992eea)
+![eqs움짤 이미지](https://github.com/user-attachments/assets/1977e5a8-a9a9-4b4b-84fc-18b9d6992eea)
 
 </div>
+
+> **8방향 BlendSpace**  
+> 부드러운 움직임을 위한 모션세팅<br>
+
+![8BlendSpace움짤](https://github.com/user-attachments/assets/7aa9b22c-615c-4586-9243-7dd4a0a03b3f)
 
 > **Task_DogBartPatrol Node**
 ```cpp
