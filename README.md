@@ -389,7 +389,89 @@ Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 �
 <br/>
 <img src="https://github.com/user-attachments/assets/f14c24f1-7358-4ed6-9d42-b1f77f2d59a0" alt="Neck 회전 적용 2" width="600"/>
 
+### 4. 🎮 Possess 함수로 캐릭터 컨트롤러 연결  
+`PlayerController` 가 캐릭터를 소유(Possess)하도록 설정합니다.  
+이 과정으로 캐릭터와 드래곤의 컨트롤러 주고받을수있습니다
+<details>
+<summary><strong>📌 Possess (폴리모프) 코드 </strong></summary>
 
+```cpp
+//new poccess
+APlayerController* playerController = Cast<APlayerController>(GetController());
+if (!playerController) return;
+
+this->SetActorHiddenInGame(true);
+this->SetActorEnableCollision(false);
+this->SetActorTickEnabled(false);
+playerController->UnPossess();
+
+FVector dragonSpawnLocation = GetActorLocation();
+FRotator dragonSpawnRotation = GetActorRotation();
+
+//Once Spawn DragonActor
+if (!newDragon)
+{
+	FActorSpawnParameters spawnParams;
+	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	newDragon = GetWorld()->SpawnActor<ADragonCharacter>(dragonCharacterClass, dragonSpawnLocation, dragonSpawnRotation, spawnParams);
+	newDragon->rememberedSwordCharacter = this;
+}
+
+//pointer set
+rememberedSwordController = playerController;
+//Once Spawn DragonController
+if (newDragon && !bIsDragonSpawned)
+{
+	//강제이동 방지
+	newDragon->bInterpZ = false;
+	if (equipmentUI) equipmentUI->SetVisibility(ESlateVisibility::Hidden);
+	if (bloodWidget) bloodWidget->SetVisibility(ESlateVisibility::Hidden);
+	if (characterWidget) characterWidget->SetVisibility(ESlateVisibility::Hidden);
+
+	ULocalPlayer* localPlayer = playerController->GetLocalPlayer();
+	newPossessController = GetWorld()->SpawnActor<APlayerController>(dragonControllerClass);
+	
+	if (newPossessController && localPlayer)
+	{
+		localPlayer->PlayerController = newPossessController;
+		newPossessController->Player = localPlayer;
+		newPossessController->Possess(newDragon);
+
+		bIsDragonSpawned = true; 
+	}
+	newDragon->dragonWidget->StartPercentageOrbCountDown();
+}
+//already spawn controller
+else if (newDragon && bIsDragonSpawned)
+{
+	newDragon->bInterpZ = false;
+	newDragon->SetActorLocation(dragonSpawnLocation);
+	newDragon->SetActorRotation(dragonSpawnRotation);
+	newDragon->SetActorHiddenInGame(false);
+	newDragon->SetActorEnableCollision(true);
+	newDragon->SetActorTickEnabled(true);
+
+	playerController->UnPossess();
+
+	ULocalPlayer* localPlayer = playerController->GetLocalPlayer();
+	if (localPlayer)
+	{
+		localPlayer->PlayerController = newPossessController;
+		newPossessController->Player = localPlayer;
+		newPossessController->Possess(newDragon);
+	}
+	// 사람 UI 숨기기
+	if (equipmentUI) equipmentUI->SetVisibility(ESlateVisibility::Hidden);
+	if (bloodWidget) bloodWidget->SetVisibility(ESlateVisibility::Hidden);
+	if (characterWidget) characterWidget->SetVisibility(ESlateVisibility::Hidden);
+	newDragon->GetMesh()->SetVisibility(true);
+	newDragon->dragonWidget->SetVisibility(ESlateVisibility::Visible);
+	newDragon->dragonWidget->StartPercentageOrbCountDown();
+	return;
+}
+```
+
+</details>
 ---
 
 ## 📌 결과
