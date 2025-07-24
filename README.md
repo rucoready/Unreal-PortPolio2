@@ -342,7 +342,7 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 
 ![Image](https://github.com/user-attachments/assets/f72e38e3-325b-446c-b90a-e855c28e8f2c) </div>
 
-> **TakeOff / Landing**
+> **TakeOff / Landing** <br/>
 > "캐릭터의 이동 상태를 Flying 모드로 전환하여, 물리 기반 중력 효과를 비활성화하고 공중에 부유하는 동작을 구현하였습니다. 이를 통해 공중 제어 및 애니메이션 전환이 매끄럽게 이루어지도록 설계하였습니다."
 <table style="width: 100%;">
   <tr>
