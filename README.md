@@ -350,14 +350,13 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/1964d324-54aa-497e-b606-5c1540b0d741" style="width: 100%; height: auto;" />
+      <img src="https://github.com/user-attachments/assets/89298f03-1ecb-4746-ba2e-d4d1531d5033" style="height: 300px;" />
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/9cf4d39c-9301-4a1d-a108-d19326a96e5c" style="width: 100%; height: auto;" />
+      <img src="https://github.com/user-attachments/assets/1964d324-54aa-497e-b606-5c1540b0d741" style="height: 300px;" />
     </td>
   </tr>
 </table>
-<br/>
 
 > **State Machine을 기반으로 한 움직임변경**  
 > AnimInstance를 활용한 State Machine 기반의 BlendSpace 제어<br>
