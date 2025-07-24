@@ -316,51 +316,21 @@ void UTask_SkeletonSpawn::TickTask(UBehaviorTreeComponent& ownerComp, uint8* nod
 
 </details>
 
-> **Task_DogBartPatrol Node**
-```cpp
-#include "Task_DogBartPatrol.h"
-#include "DogBartAIController.h"
-#include "NavigationPath.h"
-#include "AI/Navigation/NavigationTypes.h"
-#include "NavigationSystem.h"
-#include "GameFramework/Actor.h"
+## Dragon Polymorph
+드래곤으로 변신 가능한 캐릭터<br/>
 
-UTask_DogBartPatrol::UTask_DogBartPatrol(FObjectInitializer const& ObjectInitializer)
-{
-	NodeName = TEXT("DogBart Patrol");
-	bNotifyTick = true;
-}
+&nbsp;&nbsp;&nbsp;&nbsp;● StateMachine으로 제어하는 여러가지 BlendSpace <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 컨트롤Rig을 변형한 애니메이션 시퀀스 베이크 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Layered Blend Per Bone 노드를 활용해 목 위와 목 아래를 개별적으로 제어 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Projectile 타입 투사체 발사가 가능 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 변신 시 고유 시네마틱 컷씬이 재생됨 <br/>
 
-EBTNodeResult::Type UTask_DogBartPatrol::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
-{
-	TickTask(OwnerComp, NodeMemory, 0.0f);
-	ADogBartAIController* dogBartController = Cast<ADogBartAIController>(OwnerComp.GetAIOwner());
-	if (dogBartController)
-	{
-		FVector origin = dogBartController->GetPawn()->GetActorLocation();
-		navSys = FNavigationSystem::GetCurrent<UNavigationSystemV1>(this);
-		FVector randomLocation;
-		if (navSys)
-		{
-			if (navSys->K2_GetRandomReachablePointInRadius(GetWorld(), origin, randomLocation, 1500.0))
-			{
-				dogBartController->MoveToLocation(randomLocation);
-			}
-		}
-	}
-	return EBTNodeResult::Succeeded;
-}
+> **고유 시네 컷씬**  
+> 플레이어의 게이지가 Max일 경우 변신 가능<br>
 
-void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
-{
-	Super::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
-	currentTime += DeltaSeconds;
-}
-```
+![Image](https://github.com/user-attachments/assets/f72e38e3-325b-446c-b90a-e855c28e8f2c) </div>
 
-> **StateMachine**<br/>
 
-![Image](https://github.com/user-attachments/assets/a255c6c9-c8b6-4ad0-b2cc-7c8a914b5bb9) </div>
 
 ## 오브젝트
 플레이어를 도와주거나 방해하거나 디테일이 추가된 요소<br/>
