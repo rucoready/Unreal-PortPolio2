@@ -235,7 +235,9 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 > 환경 쿼리, 점수화, 필터링 과정을 통해 적절한 위치를 선택합니다
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/10873efa-9d43-4cd3-96b8-c866aa892b92" alt="EQS 시스템 구성도" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; padding: 4px;" />
+  <img src="https://github.com/user-attachments/assets/10873efa-9d43-4cd3-96b8-c866aa892b92" alt="EQS 시스템 구성도" style="max-width: 100%; border: 1px solid #ccc; border-radius: 8px; padding: 4px;" /> <br/>
+  ![Image](https://github.com/user-attachments/assets/1977e5a8-a9a9-4b4b-84fc-18b9d6992eea) <br/>
+	
 </div>
 </div>
 
