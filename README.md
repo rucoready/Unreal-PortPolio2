@@ -75,15 +75,13 @@
       <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" width="100%" />
     </td>
   </tr>
+  <tr>
+    <td colspan="2" align="center" style="border: 2px solid #ccc; padding: 10px;">
+      <strong>캐릭터 위젯 애니메이션</strong><br>
+      <img src="https://github.com/user-attachments/assets/c345f613-e967-4573-a4e4-ae55a52d014f" width="100%" />
+    </td>
+  </tr>
 </table>
-
-<br>
-
-<div align="center" style="border: 2px solid #ccc; padding: 10px; width: 90%; margin: auto;">
-  <h3 style="margin-top: 0;">캐릭터 위젯 애니메이션</h3>
-  <img src="https://github.com/user-attachments/assets/c345f613-e967-4573-a4e4-ae55a52d014f" width="100%" />
-</div>
-
 
 
 <div align="center">
