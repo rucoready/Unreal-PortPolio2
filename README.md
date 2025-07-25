@@ -292,7 +292,7 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 <img src="https://github.com/user-attachments/assets/2fb53dcc-b788-439d-b1d9-215db17307a4" alt="Behavior Tree 동작 방식" width="100%" />
 <br><br>
 
-> **Behavior Tree**
+> **Behavior Tree** <br/>
 아래는 Behavior Tree의 구조와 실행 흐름을 보여주는 다이어그램입니다.
 >
 > 
