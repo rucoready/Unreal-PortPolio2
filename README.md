@@ -156,13 +156,30 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 > **Player 스킬 표현**<br/>
 > 데칼, PostProcess를 사용하여 스킬, Blur표현
 
+<div align="center">
+  <strong>사용 예시</strong>
+</div>
+<br/>
+
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/a684f319-dd3f-4eff-9740-d78595073f6f" style="width: 100%; height: auto;" />
+    </td>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/042b867e-8617-4d1c-be2f-389b52974f9c" style="width: 100%; height: auto;" />
+    </td>
+  </tr>
+</table>
+
+
 > **데이터 관리**<br/>
 
 DataTable을 사용한 데이터입력 및 수정<br/>
 <table style="width: 100%;">
   <tr>
-    <th style="width: 50%;">R</th>
-    <th style="width: 50%;">S</th>
+    <th style="width: 50%;">스킬 수치 및 계수 Data</th>
+    <th style="width: 50%;">상점 아이템 배열 및 정보</th>
   </tr>
   <tr>
     <td style="width: 50%;">
