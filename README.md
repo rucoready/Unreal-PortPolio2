@@ -263,23 +263,20 @@ UGameplayStatics::SaveGameToSlot(saveGameInstance, saveGameInstance->saveSlotNam
 </details>
 <br/>
 
-# 게임 모드를 이용한 레벨 별로 설정된 게임 규칙
-
-게임 모드를 통해 레벨별로 다양한 게임 규칙이 적용됩니다.
+게임 모드를 별 레벨의 다양한 게임 규칙이 적용.
 
 <table align="center" style="border-collapse: separate; border-spacing: 0 20px; max-width: 320px; margin: auto;">
   <tr>
-    <td align="center" style="border: 1px solid #888; padding: 4px;">
-      <img src="https://github.com/user-attachments/assets/883ad0be-770b-4a62-b165-95f683521507" alt="SaveGame 성공 예시" width="300" />
+    <td align="center" style="border: 1px solid #888; padding: 4px; width: 320px; height: 180px;">
+      <img src="https://github.com/user-attachments/assets/883ad0be-770b-4a62-b165-95f683521507" alt="SaveGame 성공 예시" style="width: 100%; height: 100%; object-fit: cover;" />
     </td>
   </tr>
   <tr>
-    <td align="center" style="border: 1px solid #888; padding: 4px;">
-      <img src="https://github.com/user-attachments/assets/633b6321-d380-4ded-b8da-ee7b787f1c14" alt="SaveGame" width="300" />
+    <td align="center" style="border: 1px solid #888; padding: 4px; width: 320px; height: 180px;">
+      <img src="https://github.com/user-attachments/assets/633b6321-d380-4ded-b8da-ee7b787f1c14" alt="SaveGame" style="width: 100%; height: 100%; object-fit: cover;" />
     </td>
   </tr>
 </table>
-
 ## Enemy AI
 던전에서 스폰되는 AI<br/>
 
