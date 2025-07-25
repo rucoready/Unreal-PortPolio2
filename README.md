@@ -88,7 +88,7 @@
 
 <div align="center">
   <h3 style="text-align: center; font-weight: bold;">MotionWarping을 사용한 부드러운 방향전환</h3>
-  <img src="https://github.com/user-attachments/assets/025ff84a-f9f7-4a97-80d0-4c95f8e39479" alt="모션워핑">	
+  <img src="https://github.com/user-attachments/assets/dce34d96-b3dd-43fd-b387-5b02aa9c8d4f" alt="모션워핑">	
 </div>
 
 
