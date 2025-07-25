@@ -768,6 +768,11 @@ void ASoulActor::Tick(float DeltaTime)
 
 <img src="https://github.com/user-attachments/assets/ff65ec35-1848-42d3-b465-537626975162" />
 
+## 로딩
+비동기 방식의 레벨이동
+
+<img src="https://github.com/user-attachments/assets/ed1579c1-2e41-4498-8057-42444cf0e2b3" />
+
 ✅ 멀티플레이 환경구축<br/>
 ✅ BehaviorTree를 사용한 AI 제작<br/>
 ✅ 크래프팅 시스템의 구현<br/>
