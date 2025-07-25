@@ -64,9 +64,34 @@
   </tr>
 </table>
 
+<table style="width: 100%;">
+  <tr>
+    <th style="width: 50%;">캐릭터 위젯 애니메이션</th>
+    <th style="width: 50%;">던전 위젯 애니메이션</th>
+  </tr>
+  <tr>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/19a1a728-b5dd-4c58-bc06-f4105e5d4b1f" style="height: 300px;" />
+    </td>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" style="height: 300px;" />
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2" style="text-align: center; padding-top: 20px;">메인화면</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/3ff1b959-8a14-404f-a39c-cf0e0fa5892e" style="height: 300px;" />
+    </td>
+  </tr>
+</table>
+
+
+
 <div align="center">
   <h3 style="text-align: center; font-weight: bold;">MotionWarping을 사용한 부드러운 방향전환</h3>
-  <img src="https://github.com/user-attachments/assets/aad21514-07c2-4719-9624-bd5ea4122dda" alt="모션워핑">	
+  <img src="https://github.com/user-attachments/assets/025ff84a-f9f7-4a97-80d0-4c95f8e39479" alt="모션워핑">	
 </div>
 
 
