@@ -758,7 +758,7 @@ void ASoulActor::Tick(float DeltaTime)
 </details>
 
 ## MaterField / AnchorField 를 사용한 Fracture 연출
-벽이 부서지는 시네 컷씬 연출<br/
+벽이 부서지는 시네 컷씬 연출
 
 <img src="https://github.com/user-attachments/assets/70e09cd4-f9ba-4dd0-9c16-9de8f698ca8b" />
 
