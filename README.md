@@ -670,8 +670,47 @@ if (bHitRandScape)
 
 </details>
 
+> ****<br/>
 
-## 프로젝트 목표<br/>
+## AudioComponent를 사용한 BGM 관리<br/>
+
+<img src="https://github.com/user-attachments/assets/4ddaf1ac-7531-495a-bfb5-d8753d667a22" />
+
+<details>
+<summary><strong>📌 Audio Component PlayBGM 커스텀함수 </strong></summary>
+
+```cpp
+void ASwordPlayerGameBase::PlayBGM(USoundBase* bgm)
+{
+	if (!IsValid(currentBGM) || !currentBGM->IsRegistered())
+	{
+		currentBGM = NewObject<UAudioComponent>(this, UAudioComponent::StaticClass(), TEXT("BGM_AudioComponent"));
+		if (!currentBGM) return;
+
+		currentBGM->bAutoActivate = false;
+		currentBGM->bIsUISound = false;
+		currentBGM->bAllowSpatialization = false;
+		currentBGM->bOverridePriority = true;
+		currentBGM->Priority = 100.0f;
+
+		currentBGM->RegisterComponentWithWorld(GetWorld());
+		currentBGM->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	}
+
+	if (currentBGM->IsPlaying())
+	{
+		currentBGM->Stop();
+	}
+
+	currentBGM->SetSound(bgm);
+	float fadeBGMInDuration = 2.0f;
+	float bgmVolume = 1.0f;
+	float bgmStartTime = 0.0f;
+	currentBGM->FadeIn(fadeBGMInDuration, bgmVolume, bgmStartTime);
+}
+```
+
+</details>
 ✅ 멀티플레이 환경구축<br/>
 ✅ BehaviorTree를 사용한 AI 제작<br/>
 ✅ 크래프팅 시스템의 구현<br/>
