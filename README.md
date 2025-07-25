@@ -71,10 +71,10 @@
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/3ff1b959-8a14-404f-a39c-cf0e0fa5892e" style="height: 300px;" />
+      <img src="https://github.com/user-attachments/assets/3ff1b959-8a14-404f-a39c-cf0e0fa5892e" style="width: 100%; height: auto;" />
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" style="height: 300px;" />
+      <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" style="width: 100%; height: auto;" />
     </td>
   </tr>
   <tr>
