@@ -64,25 +64,25 @@
   </tr>
 </table>
 
-<table style="width: 100%;">
+<table style="width: 100%; table-layout: fixed;">
   <tr>
-    <th style="width: 50%;">메인화면 위젯 애니메이션</th>
-    <th style="width: 50%;">던전 위젯 애니메이션</th>
+    <th style="width: 50%; text-align: center;">메인화면 위젯 애니메이션</th>
+    <th style="width: 50%; text-align: center;">던전 위젯 애니메이션</th>
   </tr>
   <tr>
-    <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/3ff1b959-8a14-404f-a39c-cf0e0fa5892e" style="width: 100%; height: auto;" />
+    <td style="width: 50%; text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/3ff1b959-8a14-404f-a39c-cf0e0fa5892e" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </td>
-    <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" style="width: 100%; height: auto;" />
+    <td style="width: 50%; text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/34fc52c1-f234-4a2d-b11e-bf1bb35379fb" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </td>
   </tr>
   <tr>
     <th colspan="2" style="text-align: center; padding-top: 20px;">캐릭터 위젯 애니메이션</th>
   </tr>
   <tr>
-    <td colspan="2" style="padding: 0; margin: 0;">
-      <img src="https://github.com/user-attachments/assets/19a1a728-b5dd-4c58-bc06-f4105e5d4b1f" style="width: 100%; height: auto;" />
+    <td colspan="2" style="text-align: center; vertical-align: middle;">
+      <img src="https://github.com/user-attachments/assets/19a1a728-b5dd-4c58-bc06-f4105e5d4b1f" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
     </td>
   </tr>
 </table>
