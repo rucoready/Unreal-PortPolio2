@@ -711,6 +711,50 @@ void ASwordPlayerGameBase::PlayBGM(USoundBase* bgm)
 ```
 
 </details>
+
+## UI Absorption Effect 위젯
+3D -> 2D UI의 좌표변환이동  <br/>
+
+<img src="https://github.com/user-attachments/assets/06f6210d-1e0e-4309-a5be-6b6d89580050" />
+
+<details>
+<summary><strong>📌 Audio Component PlayBGM 커스텀함수 </strong></summary>
+
+```cpp
+void ASoulActor::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+    if (!playerCon) return;
+
+    ASwordCharacter* swordChar = Cast<ASwordCharacter>(playerCon->GetPawn());
+    if (!swordChar || !swordChar->characterWidget) return;
+
+    FVector2D holeScreenPos = swordChar->characterWidget->GetSoulHoleScreentPosition();
+    targetScreenPosition = holeScreenPos;
+
+    FVector worldOrigin, worldDirection;
+    if (playerCon->DeprojectScreenPositionToWorld(targetScreenPosition.X, targetScreenPosition.Y, worldOrigin, worldDirection))
+    {
+        float distance = 1000.f;
+        FVector targetWorldLocation = worldOrigin + worldDirection * distance;
+
+        FVector currentLocation = GetActorLocation();
+        FVector direction = (targetWorldLocation - currentLocation).GetSafeNormal();
+
+        float speed = 200.f;
+        FVector newLocation = currentLocation + direction * speed * DeltaTime;
+
+        if (FVector::Dist(newLocation, targetWorldLocation) < 5.f)
+        {
+            newLocation = targetWorldLocation;
+        }
+
+        SetActorLocation(newLocation);
+    }
+}
+```
+
+</details>
 ✅ 멀티플레이 환경구축<br/>
 ✅ BehaviorTree를 사용한 AI 제작<br/>
 ✅ 크래프팅 시스템의 구현<br/>
