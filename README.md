@@ -153,7 +153,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 <br/>
 
 
-> **Player 스킬 표현**<br/>
+> **Player 스킬 표현**  
 > 데칼, PostProcess를 사용하여 스킬, Blur표현
 
 <div align="center">
@@ -161,13 +161,13 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 </div>
 <br/>
 
-<table style="width: 100%;">
+<table width="100%">
   <tr>
-    <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/a684f319-dd3f-4eff-9740-d78595073f6f" style="width: 100%; height: auto;" />
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/a684f319-dd3f-4eff-9740-d78595073f6f" width="100%" />
     </td>
-    <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/042b867e-8617-4d1c-be2f-389b52974f9c" style="width: 100%; height: auto;" />
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/042b867e-8617-4d1c-be2f-389b52974f9c" width="100%" />
     </td>
   </tr>
 </table>
