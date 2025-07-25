@@ -158,12 +158,14 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 
 > **데이터 관리**<br/>
 
-DataTable을 사용한 데이터입력 및 수정  
-<br/>
+DataTable을 사용한 데이터입력 및 수정<br/>
 <table style="width: 100%;">
   <tr>
-    <td style="width: 50%; text-align: center;">
-      <strong>데이터 테이블 수정 예시</strong><br/>
+    <th style="width: 50%;">R</th>
+    <th style="width: 50%;">S</th>
+  </tr>
+  <tr>
+    <td style="width: 50%;">
       <img src="https://github.com/user-attachments/assets/09a7679f-f982-4fde-b7ba-ba5c42ab8fbf" style="width: 100%; height: auto;" />
     </td>
     <td style="width: 50%;">
