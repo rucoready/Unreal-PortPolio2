@@ -39,7 +39,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● PostProcess를 사용한 여러가지 효과<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Decal을 사용한 인디케이터<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● MotionWarping을 사용한 자연스러운 플레이어 움직임<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 다이나믹한 위젯<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 직교투영 미니맵<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 넉백, 렉돌, 데미지Hud를 사용한 전투경험<br/>
 
 > **Player 설계도**<br/>
