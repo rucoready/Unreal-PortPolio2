@@ -153,7 +153,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 <br/>
 
 
-# Player 스킬 표현
+> **Player 스킬 표현**<br/>
 
 데칼(Decal)과 PostProcess를 활용하여 스킬 및 Blur 효과를 구현하였습니다.
 
