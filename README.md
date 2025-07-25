@@ -39,6 +39,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● PostProcess를 사용한 여러가지 효과<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Decal을 사용한 인디케이터<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● MotionWarping을 사용한 자연스러운 플레이어 움직임<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 다이나믹한 위젯<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 넉백, 렉돌, 데미지Hud를 사용한 전투경험<br/>
 
 > **Player 설계도**<br/>
@@ -490,6 +491,13 @@ AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여,
   <em>▲ 최종 BlendSpace 연동 결과</em>
 </p>
 
+## Interaction
+플레이어와 상호작용되는 오브젝트 및 시스템<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 피직스 메테리얼 FootStep 및 사운드 관리<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● UI Absorption Effect<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 마스터 필드를 사용한 Fracture 연출<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Npc<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 비동기 로딩<br/>
 
 
 --------
