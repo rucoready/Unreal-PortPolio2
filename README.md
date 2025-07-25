@@ -89,9 +89,6 @@
   <img src="https://github.com/user-attachments/assets/dce34d96-b3dd-43fd-b387-5b02aa9c8d4f" alt="모션워핑">	
 </div>
 
-
-
-
 <details>
 <summary><strong>📌 마우스 위치 기반 MotionWarping 코드</strong></summary>
 
@@ -155,16 +152,18 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 </details>
 <br/>
 
+
+> **Player 스킬 표현**<br/>
+> 데칼, PostProcess를 사용하여 스킬, Blur표현
+
 > **데이터 관리**<br/>
 
-DataTable을 사용한 데이터입력 및 수정<br/>
+DataTable을 사용한 데이터입력 및 수정  
+<br/>
 <table style="width: 100%;">
   <tr>
-    <th style="width: 50%;">플레이어 스킬 계수 및 데미지</th>
-    <th style="width: 50%;">상점 아이템</th>
-  </tr>
-  <tr>
-    <td style="width: 50%;">
+    <td style="width: 50%; text-align: center;">
+      <strong>데이터 테이블 수정 예시</strong><br/>
       <img src="https://github.com/user-attachments/assets/09a7679f-f982-4fde-b7ba-ba5c42ab8fbf" style="width: 100%; height: auto;" />
     </td>
     <td style="width: 50%;">
