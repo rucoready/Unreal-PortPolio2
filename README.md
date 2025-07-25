@@ -77,12 +77,11 @@
   </tr>
 </table>
 
-<div align="center">
+<br>
 
-### 캐릭터 위젯 애니메이션
-
-<img src="https://github.com/user-attachments/assets/19a1a728-b5dd-4c58-bc06-f4105e5d4b1f" width="90%" />
-
+<div align="center" style="border: 2px solid #ccc; padding: 10px; width: 90%; margin: auto;">
+  <h3 style="margin-top: 0;">캐릭터 위젯 애니메이션</h3>
+  <img src="https://github.com/user-attachments/assets/19a1a728-b5dd-4c58-bc06-f4105e5d4b1f" width="100%" />
 </div>
 
 
