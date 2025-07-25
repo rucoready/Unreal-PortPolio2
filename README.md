@@ -766,7 +766,7 @@ void ASoulActor::Tick(float DeltaTime)
 ## NPC
 플레이어와 상호 작용이 가능한 NPC
 
-<img src="https://github.com/user-attachments/assets/ff65ec35-1848-42d3-b465-537626975162" />
+<img src="https://github.com/user-attachments/assets/ccb98f1f-0cb5-494e-b1bf-4abb1af2f430" />
 
 ## 로딩
 비동기 방식의 레벨이동
