@@ -714,6 +714,7 @@ void ASwordPlayerGameBase::PlayBGM(USoundBase* bgm)
 
 ## UI Absorption Effect 위젯
 3D -> 2D UI의 좌표변환이동  <br/>
+좌표로 변환한 뒤, 해당 위치로 액터를 보간 이동  <br/>
 
 <img src="https://github.com/user-attachments/assets/06f6210d-1e0e-4309-a5be-6b6d89580050" />
 
