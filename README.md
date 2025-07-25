@@ -153,38 +153,44 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 <br/>
 
 
-> **Player 스킬 표현**  
-> 데칼, PostProcess를 사용하여 스킬, Blur표현
+# Player 스킬 표현
 
-<div align="center">
-  <strong>데칼</strong>
-</div>
-<br/>
+데칼(Decal)과 PostProcess를 활용하여 스킬 및 Blur 효과를 구현하였습니다.
+
+---
+
+## 🎯 데칼 (Decal)
+
+아래 이미지는 데칼을 사용한 스킬 표현 예시입니다.
 
 <table width="100%">
   <tr>
     <td width="50%">
-      <img src="https://github.com/user-attachments/assets/a684f319-dd3f-4eff-9740-d78595073f6f" width="100%" />
+      <img src="https://github.com/user-attachments/assets/a684f319-dd3f-4eff-9740-d78595073f6f" width="100%" alt="Decal Example 1" />
     </td>
     <td width="50%">
-      <img src="https://github.com/user-attachments/assets/042b867e-8617-4d1c-be2f-389b52974f9c" width="100%" />
+      <img src="https://github.com/user-attachments/assets/042b867e-8617-4d1c-be2f-389b52974f9c" width="100%" alt="Decal Example 2" />
     </td>
   </tr>
 </table>
-<br/>
 
-<div align="center">
-  <strong>신속 Blur</strong>
-</div>
-<br/>
+[데칼 제작과정 자세히 보기](https://lucodev.tistory.com/13)
+
+---
+
+## 🎯 신속 Blur 효과
+
+아래 이미지는 PostProcess를 이용해 구현한 신속 Blur 효과입니다.
 
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/user-attachments/assets/4e5fe6d7-1b85-4585-8f61-ab533f6f45e4" style="width: 100%; height: auto;" />
+      <img src="https://github.com/user-attachments/assets/4e5fe6d7-1b85-4585-8f61-ab533f6f45e4" style="width: 100%; height: auto;" alt="Quick Blur Effect" />
     </td>
   </tr>
 </table>
+
+[신속 Blur 제작과정 자세히 보기](https://lucodev.tistory.com/32)
 
 
 
