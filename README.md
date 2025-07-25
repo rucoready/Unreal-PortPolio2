@@ -581,8 +581,94 @@ AudioComponent 및 사운드큐를 사용한 사운드 관리. <br/>
 
 <img src="https://github.com/user-attachments/assets/5579af27-e638-4460-ad08-f0957ab7d3ec" alt="footstepimage" width="600" />
 
-<img src="https://github.com/user-attachments/assets/f3b4a923-b598-4b63-8e1e-925217316862" alt="enumclass사진2" width="600" />
+<details>
+<summary><strong>📌 LandScape Physical Material FootStep 코드 </strong></summary>
 
+```cpp
+//landscape
+FHitResult randScapeHitResult = {};
+FCollisionQueryParams randScapeParam = {};
+randScapeParam.bReturnPhysicalMaterial = true;
+randScapeParam.AddIgnoredActor(this);
+bool bHitRandScape = GetWorld()->LineTraceSingleByChannel(randScapeHitResult, startPoint, endPoint, ECC_GameTraceChannel6, randScapeParam);
+
+if (bHitRandScape)
+{
+	// PhysMaterial 얻기
+	UPhysicalMaterial* physMat = randScapeHitResult.PhysMaterial.Get();
+
+	if (physMat)
+	{
+		// SurfaceType 가져오기
+		EPhysicalSurface surfaceType = UPhysicalMaterial::DetermineSurfaceType(physMat);
+		switch (surfaceType)
+		{
+		case SurfaceType_Default:
+			break;
+			//NormalTile
+		case SurfaceType1:
+			if (sound_NormalTile.Num() > 0)
+			{
+				int32 normalTileIndex = FMath::RandRange(0, sound_NormalTile.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_NormalTile[normalTileIndex], hit.ImpactPoint);
+			}
+			break;
+			//DungeonTile
+		case SurfaceType2:
+			if (sound_DungeonTile.Num() > 0)
+			{
+				int32 dungeonTileIndex = FMath::RandRange(0, sound_DungeonTile.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_DungeonTile[dungeonTileIndex], hit.ImpactPoint);
+			}
+			break;
+			//Sand
+		case SurfaceType3:
+			if (sound_Sand.Num() > 0)
+			{
+				int32 sandIndex = FMath::RandRange(0, sound_Sand.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_Sand[sandIndex], hit.ImpactPoint);
+			}
+			break;
+			//Wood
+		case SurfaceType4:
+			if (sound_Wood.Num() > 0)
+			{
+				int32 woodIndex = FMath::RandRange(0, sound_Wood.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_Wood[woodIndex], hit.ImpactPoint);
+			}
+			break;
+			//Grass
+		case SurfaceType5:
+			if (sound_Grass.Num() > 0)
+			{
+				int32 grassIndex = FMath::RandRange(0, sound_Grass.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_Grass[grassIndex], hit.ImpactPoint);
+			}
+			break;
+			//Water
+		case SurfaceType6:
+			if (sound_Water.Num() > 0)
+			{
+				int32 waterIndex = FMath::RandRange(0, sound_Water.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_Water[waterIndex], hit.ImpactPoint);
+			}
+			break;
+		case SurfaceType7:
+			//Stone
+			if (sound_Stone.Num() > 0)
+			{
+				int32 stoneIndex = FMath::RandRange(0, sound_Stone.Num() - 1);
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), sound_Stone[stoneIndex], hit.ImpactPoint);
+			}
+			break;
+		default:
+			break;
+		}
+	}
+}
+```
+
+</details>
 
 
 ## 프로젝트 목표<br/>
