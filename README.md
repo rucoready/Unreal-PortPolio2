@@ -157,7 +157,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 > 데칼, PostProcess를 사용하여 스킬, Blur표현
 
 <div align="center">
-  <strong>사용 예시</strong>
+  <strong>데칼</strong>
 </div>
 <br/>
 
@@ -171,6 +171,22 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
     </td>
   </tr>
 </table>
+<br/>
+
+<div align="center">
+  <strong>신속 Blur</strong>
+</div>
+<br/>
+
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%;">
+      <img src="https://github.com/user-attachments/assets/4e5fe6d7-1b85-4585-8f61-ab533f6f45e4" style="width: 100%; height: auto;" />
+    </td>
+  </tr>
+</table>
+
+
 
 
 > **데이터 관리**<br/>
