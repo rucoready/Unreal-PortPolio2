@@ -572,6 +572,17 @@ AnimInstance에서 StateMachine과 BlendSpace를 함께 활용하여,
 &nbsp;&nbsp;&nbsp;&nbsp;● Npc<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 비동기 로딩<br/>
 
+> **피직스 메테리얼 FootStep 및 사운드 관리**  
+> LandScape 레벨 레이어 발소리 및 이펙트 출력<br>
+
+## 피직스 메테리얼 FootStep 및 사운드 관리  
+LandScape 레벨 레이어 발소리 및 이펙트 출력. <br/>
+AudioComponent 및 사운드큐를 사용한 사운드 관리. <br/>
+
+<img src="https://github.com/user-attachments/assets/5579af27-e638-4460-ad08-f0957ab7d3ec" alt="footstepimage" width="600" />
+
+<img src="https://github.com/user-attachments/assets/f3b4a923-b598-4b63-8e1e-925217316862" alt="enumclass사진2" width="600" />
+
 
 
 ## 프로젝트 목표<br/>
