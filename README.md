@@ -50,10 +50,7 @@
 
 Unreal Engine의 `SetupInputComponent()`를 활용하여  
 플레이어의 키보드/마우스 입력을 바인딩한 구조입니다.
-
-<div style="border: 1px solid #ddd; padding: 12px; border-radius: 8px; max-width: 80%; margin: 16px auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" style="width: 100%; border-radius: 6px;" />
-</div>
+  <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="80%">
 
 ### 🎨 UI Widget
 
