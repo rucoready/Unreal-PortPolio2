@@ -769,7 +769,7 @@ Field System 기반으로 파편이 날리는 방향과 강도를 제어하였�
 <img src="https://github.com/user-attachments/assets/70e09cd4-f9ba-4dd0-9c16-9de8f698ca8b" alt="Fracture 시네컷 연출" />
 
 <details>
-<summary><strong>▶ 단면 보기</strong></summary>
+<summary><strong>단면 보기</strong></summary>
 
 <img src="https://github.com/user-attachments/assets/54e6b1f4-cd83-4e9d-b810-6486309694c9" alt="Fracture 단면 구조" />
 
