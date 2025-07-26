@@ -1,0 +1,58 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "DamagePopupActor.h"
+#include "Components/WidgetComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "TimerManager.h"
+
+// Sets default values
+ADamagePopupActor::ADamagePopupActor()
+{
+	PrimaryActorTick.bCanEverTick = true;
+
+	widgetComp = CreateDefaultSubobject<UWidgetComponent>(TEXT("WidgetComp"));
+	RootComponent = widgetComp;
+
+	widgetComp->SetWidgetSpace(EWidgetSpace::Screen);
+	widgetComp->SetDrawAtDesiredSize(true);
+	widgetComp->SetUsingAbsoluteRotation(true);
+}
+
+// Called when the game starts or when spawned
+void ADamagePopupActor::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	GetWorldTimerManager().SetTimerForNextTick([this]()
+		{
+			SetLifeSpan(1.5f);
+		});
+	
+}
+
+// Called every frame
+void ADamagePopupActor::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+void ADamagePopupActor::InitDamage(float damage, bool bCritical)
+{
+	damageWidgetInstance = Cast<UDamageWidget>(widgetComp->GetUserWidgetObject());
+	if (damageWidgetInstance)
+	{
+		if (bCritical)
+		{
+			damageWidgetInstance->PlayCriticalDamageAnimation(damage);
+			UGameplayStatics::PlaySoundAtLocation(this, critSound, GetActorLocation());
+		}
+		else
+		{
+			damageWidgetInstance->PlayNormalDamageAnimation(damage);
+			UGameplayStatics::PlaySoundAtLocation(this, normalSound, GetActorLocation());
+		}
+	}
+}
+
