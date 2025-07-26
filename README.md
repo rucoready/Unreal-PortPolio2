@@ -52,6 +52,8 @@ Unreal Engine의 `SetupInputComponent()`를 활용하여
 
   <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="80%">
 
+### UI Widget
+플레이어와 상호작용하는 여러종류의 다이나믹위젯
 
 <table style="width: 100%;">
   <tr>
