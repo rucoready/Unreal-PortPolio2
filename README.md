@@ -49,13 +49,11 @@
 Unreal Engine의 `SetupInputComponent()`를 활용하여  
 플레이어의 키보드/마우스 입력을 바인딩한 구조입니다.
 
-- 마우스 및 키보드에 대한 액션 이벤트 바인딩  
-- `IE_Pressed`, `IE_Released` 처리로 입력 상태 구분  
-- 기능별 함수로 분리하여 유지보수 용이
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="500px">
+  <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="80%">
 </p>
+
 
 <table style="width: 100%;">
   <tr>
