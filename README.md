@@ -760,30 +760,41 @@ void ASoulActor::Tick(float DeltaTime)
 
 </details>
 
-## MaterField / AnchorField 를 사용한 Fracture 연출
-벽이 부서지는 시네 컷씬 연출
+## Fracture 연출 (MaterField / AnchorField 사용)
 
-<img src="https://github.com/user-attachments/assets/70e09cd4-f9ba-4dd0-9c16-9de8f698ca8b" />
+Chaos Fracture 시스템을 활용해 벽이 부서지는 시네마틱 컷씬을 제작하였습니다.  
+AnchorField, NoiseField 등을 조합하여 벽이 점진적으로 파괴되는 물리 기반 연출을 구현하였으며,  
+Field System 기반으로 파편이 날리는 방향과 강도를 제어하였습니다.
+
+<img src="https://github.com/user-attachments/assets/70e09cd4-f9ba-4dd0-9c16-9de8f698ca8b" alt="Fracture 시네컷 연출" />
+
 <details>
-<summary><strong>📌단면 보기</stroag></summary>
-<img src="https://github.com/user-attachments/assets/54e6b1f4-cd83-4e9d-b810-6486309694c9" />
-```
+<summary><strong>▶ 단면 보기</strong></summary>
+
+<img src="https://github.com/user-attachments/assets/54e6b1f4-cd83-4e9d-b810-6486309694c9" alt="Fracture 단면 구조" />
+
 </details>
 
-## NPC
-플레이어와 상호 작용이 가능한 NPC
+---
 
-<img src="https://github.com/user-attachments/assets/ccb98f1f-0cb5-494e-b1bf-4abb1af2f430" />
+## NPC 상호작용 시스템
 
-## 로딩
-비동기 방식의 레벨이동
+NPC는 DataTable 기반으로 생성되며, 각 NPC의 이름, 위치, 상호작용 타입(대화, 상점, 퀘스트 등)은  
+구조체 배열로 정의되어 있어 관리가 용이합니다.  
+UI와 연동된 상호작용 인터페이스를 통해 플레이어와 자연스럽게 상호작용할 수 있도록 설계하였습니다.
 
-<img src="https://github.com/user-attachments/assets/ed1579c1-2e41-4498-8057-42444cf0e2b3" />
+<img src="https://github.com/user-attachments/assets/ccb98f1f-0cb5-494e-b1bf-4abb1af2f430" alt="NPC 시스템 이미지" />
 
-✅ 멀티플레이 환경구축<br/>
-✅ BehaviorTree를 사용한 AI 제작<br/>
-✅ 크래프팅 시스템의 구현<br/>
-✅ 한사이클이 돌아가는 rpg 게임 구현<br/>
+---
+
+## 비동기 레벨 로딩
+
+Level Streaming을 활용하여 게임의 각 지역을 분할하고,  
+`LoadStreamLevel`로 플레이어의 위치나 이벤트 발생 시 비동기적으로 레벨을 불러옵니다.  
+이 과정에서 별도의 로딩 UI 위젯을 통해 로딩 상태를 표시하며, Seamless한 전환이 가능하게 구성하였습니다.
+
+<img src="https://github.com/user-attachments/assets/ed1579c1-2e41-4498-8057-42444cf0e2b3" alt="비동기 로딩 UI" />
+
 
 
 
