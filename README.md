@@ -315,7 +315,9 @@ AI의 동작방식 설계도입니다
 ![eqs움짤 이미지](https://github.com/user-attachments/assets/1977e5a8-a9a9-4b4b-84fc-18b9d6992eea)
 
 </div>
+
 ---
+
 > **8방향 BlendSpace**  
 > 부드러운 움직임을 위한 모션세팅<br>
 
@@ -329,6 +331,7 @@ AI의 동작방식 설계도입니다
 ![8BlendSpace설계도사진](https://github.com/user-attachments/assets/84b2df3a-e4f4-4df1-bbd2-5308c6a92f8f)
 
 </details>
+---
 
 > **스폰과 디스폰을 위한 DissolveMaterial**  
 > 스칼라 파라미터의 제어로 스폰과 디스폰의 연출<br>
