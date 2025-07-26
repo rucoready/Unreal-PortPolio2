@@ -60,7 +60,7 @@ Unreal Engine의 `SetupInputComponent()`를 활용하여
 플레이어의 키보드/마우스 입력을 바인딩한 구조입니다.
   <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="80%">
 
-### 🎨 UI Widget
+### UI Widget
 
 플레이어와 실시간으로 상호작용하는  <br/>
 다양한 다이나믹 UI 위젯들을 구현하였습니다. <br/>
@@ -177,7 +177,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 
 데칼(Decal)과 PostProcess를 활용하여 스킬 및 Blur 효과를 구현하였습니다.
 
-## 🎯 데칼 (Decal)
+## 데칼 (Decal)
 
 아래 이미지는 데칼을 사용한 스킬 표현 예시입니다.
 
@@ -196,7 +196,7 @@ if (playerController->DeprojectMousePositionToWorld(worldLocation, worldDirectio
 
 ---
 
-## 🎯 신속 Blur 효과
+## 신속 Blur 효과
 
 아래 이미지는 PostProcess를 이용해 구현한 신속 Blur 효과입니다.
 
@@ -322,7 +322,7 @@ AI의 동작방식 설계도입니다
 |:--------------:|:-------------------:|
 | <img src="https://github.com/user-attachments/assets/5566b686-4456-4c66-922a-51697a04f943" alt="BehaviorTree Left" width="100%"/> | <img src="https://github.com/user-attachments/assets/d854d143-313e-4efa-ac8c-8327227b4cc5" alt="BehaviorTree Right" width="100%"/> |
 
-## 🎯 EQS 시스템 (Environment Query System)
+## EQS 시스템 (Environment Query System)
 
 > **EQS 모델 설명**  
 > Strafe 이동을 위한 EQS 시스템<br>
@@ -467,21 +467,21 @@ BehaviorTree의 Task에서 Enum 값을 기반으로 AI의 상태를 제어합니
 
 ---
 
-### 1. 🎛 Control Rig 기반 애니메이션 제작  
+### 1. Control Rig 기반 애니메이션 제작  
 Control Rig를 사용해 직접 포즈 및 움직임을 제어하며 애니메이션 시퀀스를 제작합니다.
 
 <img src="https://github.com/user-attachments/assets/f8f6207e-b166-4b44-910c-e448c1869379" alt="ControlRig 제작" width="600"/>
 
 ---
 
-### 2. 🔥 애니메이션 시퀀스 베이킹 후 BlendSpace에 연동  
+### 2. 애니메이션 시퀀스 베이킹 후 BlendSpace에 연동  
 Control Rig로 제작한 시퀀스를 Bake하여 애니메이션 자산으로 변환한 뒤, 이를 BlendSpace에 연결하여 다양한 방향 전환/속도에 따른 자연스러운 전환을 구성합니다.
 
 <img src="https://github.com/user-attachments/assets/e0d24d5d-496c-4588-8549-400f6e115302" alt="BlendSpace 연동" width="600"/>
 
 ---
 
-### 3. 🦴 SkeletalMesh의 Neck 본 별도 제어  
+### 3. SkeletalMesh의 Neck 본 별도 제어  
 상체의 시선 방향이나 고개 움직임을 세밀하게 제어하기 위해, Neck 본의 회전은 별도로 AnimInstance에서 제어합니다.
 
 <img src="https://github.com/user-attachments/assets/5a1f46fa-e4f3-4074-aa0a-6429357e685c" alt="Neck 회전 적용 1" width="600"/>
