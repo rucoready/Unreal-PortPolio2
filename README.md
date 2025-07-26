@@ -3,6 +3,7 @@
 포트폴리오 목표로 제작된 탑다운 RPG 데모 게임입니다.<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 엔진 : Unreal Engine 5.4 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 사용언어 : C++ <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 규모 : 2인 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 제작기간 : 50일 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 담당부분 : 인벤토리 제외 전부 <br/>
