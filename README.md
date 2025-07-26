@@ -761,7 +761,11 @@ void ASoulActor::Tick(float DeltaTime)
 벽이 부서지는 시네 컷씬 연출
 
 <img src="https://github.com/user-attachments/assets/70e09cd4-f9ba-4dd0-9c16-9de8f698ca8b" />
+<details>
+<summary><strong>📌단면 보기</stroag></summary>
 <img src="https://github.com/user-attachments/assets/54e6b1f4-cd83-4e9d-b810-6486309694c9" />
+```
+</details>
 
 ## NPC
 플레이어와 상호 작용이 가능한 NPC
