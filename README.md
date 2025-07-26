@@ -14,6 +14,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● GithubDesktop<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Github, GithubLFS<br/>
 
+# 개발 기록
+
+프로젝트 개발 과정에서 사용한 기술과 노하우를 기록한 블로그입니다.  
+
+🔗 [개발자 티스토리 - Unreal5 프로젝트 다이어리](https://lucodev.tistory.com/category/Unreal5%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC)
+
 # 데모 영상 
 | 시연영상 
 | <a href="https://youtu.be/GQQTKInkYU4?si=LuZnMZ9ZGrvhFbc3"><img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0c4450f8-6378-4a69-a7a2-1d770803d3a5" /> </a> 
