@@ -44,16 +44,22 @@
 
 > **Player 설계도**<br/>
 
+
+
 ### 🔧 Action Mapping을 사용한 액션 바인딩
 
 Unreal Engine의 `SetupInputComponent()`를 활용하여  
 플레이어의 키보드/마우스 입력을 바인딩한 구조입니다.
-
-
   <img src="https://github.com/user-attachments/assets/aaf2363e-8e46-477e-841e-d0bfd83de486" alt="Action Mapping 이미지" width="80%">
 
-### UI Widget
-플레이어와 상호작용하는 여러종류의 다이나믹위젯
+### 🎨 UI Widget
+
+플레이어와 실시간으로 상호작용하는  <br/>
+다양한 다이나믹 UI 위젯들을 구현하였습니다. <br/>
+
+- **직관적인 인터페이스**로 플레이어 경험 극대화  
+- **실시간 상태 반영**으로 즉각적인 정보 전달  
+- **유연한 확장성**을 가진 다양한 위젯 구성 
 
 <table style="width: 100%;">
   <tr>
