@@ -4,9 +4,8 @@
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 엔진 : Unreal Engine 5.4 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 사용언어 : C++ <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 규모 : 2인 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 규모 : 1인 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 제작기간 : 50일 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;● 담당부분 : 인벤토리 제외 전부 <br/>
 
 # 사용한 개발 도구<br/>
 
